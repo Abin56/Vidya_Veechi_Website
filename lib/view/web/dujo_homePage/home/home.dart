@@ -30,17 +30,17 @@ class HomeScreen extends StatelessWidget {
                 DujoHOmeScreen(),
                 DujoWebFeatures(),
                 // MobileAppBAr(), // App Bar
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 FooterSectionScreen(),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],
@@ -51,20 +51,20 @@ class HomeScreen extends StatelessWidget {
                 DujoHOmeScreen(),
                 DujoWebFeatures(),
                 // DujoHomeWebSiteDetails(),
-                Divider(
-                  height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: FooterSectionScreen(),
                 ),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],

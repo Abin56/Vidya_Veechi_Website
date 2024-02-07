@@ -2,6 +2,7 @@ import 'package:dujo_kerala_website/ui%20team/abin/responsive%20mob/_/cancellati
 import 'package:dujo_kerala_website/ui%20team/abin/responsive%20mob/_/mob_view.dart/trademark.dart';
 import 'package:dujo_kerala_website/ui%20team/abin/responsive%20mob/_/mob_view.dart/who_we_are.dart';
 import 'package:dujo_kerala_website/ui%20team/abin/responsive%20mob/_/mob_view.dart/why_choose_us.dart';
+import 'package:dujo_kerala_website/view/colors/colors.dart';
 import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_widget.dart';
 import 'package:dujo_kerala_website/view/web/home/family_policy.dart';
 import 'package:flutter/material.dart';
@@ -30,6 +31,7 @@ class AddressWidget extends StatelessWidget {
             text: 'Address',
             fontsize: 21,
             fontWeight: FontWeight.bold,
+            color: cWhite,
           ),
           Expanded(
             child: Padding(
@@ -40,6 +42,7 @@ class AddressWidget extends StatelessWidget {
                       text: address[index],
                       fontsize: 12,
                       fontWeight: FontWeight.w500,
+                      color: cWhite,
                     );
                   },
                   separatorBuilder: (context, index) {
@@ -75,6 +78,7 @@ class LegalWidget extends StatelessWidget {
             text: 'Legal',
             fontsize: 21,
             fontWeight: FontWeight.bold,
+            color: cWhite,
           ),
           Expanded(
             child: Padding(
@@ -96,7 +100,7 @@ class LegalWidget extends StatelessWidget {
                       child: OnHoverText(builder: (isHoverd) {
                         final color = isHoverd
                             ? const Color.fromARGB(255, 197, 0, 0)
-                            : Colors.black;
+                            : cWhite;
 
                         return GooglePoppinsWidgets(
                           color: color,
@@ -140,6 +144,7 @@ class ConnecWidget extends StatelessWidget {
             text: 'Connect',
             fontsize: 21,
             fontWeight: FontWeight.bold,
+            color: cWhite,
           ),
           Expanded(
             child: Padding(
@@ -153,7 +158,7 @@ class ConnecWidget extends StatelessWidget {
                       child: OnHoverText(builder: (isHoverd) {
                         final color = isHoverd
                             ? const Color.fromARGB(255, 197, 0, 0)
-                            : Colors.black;
+                            : cWhite;
                         return GooglePoppinsWidgets(
                           color: color,
                           text: connect[index],
@@ -196,6 +201,7 @@ class WhoWeAreWidget extends StatelessWidget {
             text: 'LEPTON VIDYAVEECHI',
             fontsize: 18,
             fontWeight: FontWeight.bold,
+            color: cWhite,
           ),
           Expanded(
             child: Padding(
@@ -213,7 +219,7 @@ class WhoWeAreWidget extends StatelessWidget {
                       child: OnHoverText(builder: (isHoverd) {
                         final color = isHoverd
                             ? const Color.fromARGB(255, 197, 0, 0)
-                            : Colors.black;
+                            :  cWhite;
                         return GooglePoppinsWidgets(
                           text: constechDUjo[index],
                           color: color,
