@@ -82,7 +82,7 @@ class DujoWebFeatures extends StatelessWidget {
                   children: [
                     WidgetContainerOnHome(
                         body:
-                            "School administrators have comprehensive control over the entire school community. They can monitor academic records, achievements, fee management, hostel management, library management, and school bus tracking. The app helps in efficient and economic management of the institution",
+                            "++ administrators have comprehensive control over the entire school community. They can monitor academic records, achievements, fee management, hostel management, library management, and school bus tracking. The app helps in efficient and economic management of the institution",
                         imagePath: 'assets/images/admin_png.png',
                         title: 'Admin Login'),
                     WidgetContainerOnHome(

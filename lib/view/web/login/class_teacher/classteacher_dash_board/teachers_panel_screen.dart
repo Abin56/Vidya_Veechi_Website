@@ -4,6 +4,7 @@ import 'dart:developer';
 import 'dart:html' as html;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_widget.dart';
 import 'package:dujo_kerala_website/view/web/login/class_teacher/classteacher_dash_board/subject/subject_screen.dart';
 import 'package:dujo_kerala_website/view/web/widgets/Iconbackbutton.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -470,8 +471,14 @@ class _NewAdminMainPanelState extends State<ClassTeacherAdmin> {
                     Container(
                         margin: EdgeInsets.only(top: 20.h),
                         height: 30.w,
-                        width: 80.w,
-                        child: Image.asset('assets/images/dujon.png')),
+                        width: 150.w,
+                        child: Row(
+                               children: [
+                                Image.asset("assets/images/vidyaveechi_logo.png"),
+                                GooglePoppinsWidgets(text: "VIDYAVEECHI", fontsize: 14,fontWeight: FontWeight.w500,color: cWhite,),
+                                 ],
+                               )
+                     ),
                     Row(
                       children: [
                         IconButtonBackWidget(
