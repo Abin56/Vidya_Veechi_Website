@@ -12,7 +12,7 @@ class CopyRightWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+      color: Colors.lightBlue[700],
       height: 60,
       width: double.infinity,
       child: Row(

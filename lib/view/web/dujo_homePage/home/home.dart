@@ -4,7 +4,6 @@ import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/footer.da
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/lepton_footerbar.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/widgets/copyright_widget.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/responsive/responsive.dart';
-import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/widget_container.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -31,17 +30,17 @@ class HomeScreen extends StatelessWidget {
                 DujoHOmeScreen(),
                 DujoWebFeatures(),
                 // MobileAppBAr(), // App Bar
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 FooterSectionScreen(),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],
@@ -52,20 +51,20 @@ class HomeScreen extends StatelessWidget {
                 DujoHOmeScreen(),
                 DujoWebFeatures(),
                 // DujoHomeWebSiteDetails(),
-                Divider(
-                  height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: FooterSectionScreen(),
                 ),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],
