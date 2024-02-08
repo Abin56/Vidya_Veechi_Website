@@ -9,8 +9,8 @@ class AppColors {
   static const Color whiteColor = Color(0xffFFFFFF);
   static const Color blueColore = Color(0xffFFFFFF);
   static const Color blackColore = Color.fromARGB(255, 0, 0, 0);
-}
-
+}const Color themeColorGreen = Color(0xFF26A69A);
+const Color themeColorBlue = Color.fromARGB(255, 6, 71, 157);
 const Color adminePrimayColor = Color.fromARGB(255, 27, 92, 176);
 const Color adminePrimayColor1 = Color.fromARGB(255, 67, 0, 212);
 const Color cWhite = Color(0xffFFFFFF);

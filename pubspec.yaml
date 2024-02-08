@@ -82,9 +82,16 @@ dependencies:
   universal_html:
   url_launcher:
   uuid:
+  sidebar_drawer:
   video_player:
   video_player_web_hls: 
   visibility_detector:
+  syncfusion_flutter_charts: 
+  syncfusion_flutter_calendar:
+  syncfusion_flutter_datagrid:
+  syncfusion_flutter_gauges:  
+  percent_indicator:
+  data_table_2: 
   # wakelock: ^0.6.2 
 
 dev_dependencies:
