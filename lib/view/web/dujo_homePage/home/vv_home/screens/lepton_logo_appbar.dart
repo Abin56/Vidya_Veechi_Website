@@ -22,67 +22,62 @@ class LeptonLogoVidyaveechi extends StatelessWidget {
                 child: Row(
                   // mainAxisAlignment: MainAxisAlignment.,
                   children: [
-                    Container(
-                      height: screenSize.width / 15.5,
-                      width: screenSize.width / 4.5,
-                      color: Colors.white,
-                      child: Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(
-                              left: 10,
-                            ),
-                            child: Container(
-                              height: 80,
-                              width: 80,
-                              color: Colors.transparent,
-                              child: Image.asset(
-                                "assets/images/logo5.png",
-                              ),
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 10,
+                          ),
+                          child: Container(
+                            height: 80,
+                            width: 80,
+                            color: Colors.transparent,
+                            child: Image.asset(
+                              "assets/images/logo5.png",
                             ),
                           ),
-                          // Padding(
-                          //   padding: const EdgeInsets.only(
-                          //     left: 10,
-                          //   ),
-                          //   child: Container(
-                          //     // height: 80,
-                          //     width: 140,
-                          //     color: Colors.transparent,
-                          //     child: Image.asset(
-                          //       "assets/images/vvl1.png",
-                          //     ),
-                          //   ),
-                          // ),
-                          Column(
-                            children: [
-                              Padding(
-                                padding:
-                                    const EdgeInsets.only(top: 10, left: 20),
-                                child: Text(
-                                  "Lepton",
-                                  style: GoogleFonts.dmSerifDisplay(
-                                      color:
-                                          const Color.fromARGB(255, 38, 93, 15),
-                                      fontSize: screenSize.width / 50,
-                                      fontWeight: FontWeight.bold),
-                                ),
+                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.only(
+                        //     left: 10,
+                        //   ),
+                        //   child: Container(
+                        //     // height: 80,
+                        //     width: 140,
+                        //     color: Colors.transparent,
+                        //     child: Image.asset(
+                        //       "assets/images/vvl1.png",
+                        //     ),
+                        //   ),
+                        // ),
+                        Column(
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.only(top: 10, left: 20),
+                              child: Text(
+                                "Lepton",
+                                style: GoogleFonts.dmSerifDisplay(
+                                    color:
+                                        const Color.fromARGB(255, 38, 93, 15),
+                                    fontSize: screenSize.width / 50,
+                                    fontWeight: FontWeight.bold),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(left: 20),
-                                child: Text(
-                                  "VidyaVeechi",
-                                  style: GoogleFonts.dmSerifDisplay(
-                                      color:
-                                          const Color.fromARGB(255, 43, 97, 19),
-                                      fontSize: screenSize.width / 60,
-                                      fontWeight: FontWeight.bold),
-                                ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 20),
+                              child: Text(
+                                "VidyaVeechi",
+                                style: GoogleFonts.dmSerifDisplay(
+                                    color:
+                                        const Color.fromARGB(255, 43, 97, 19),
+                                    fontSize: screenSize.width / 60,
+                                    fontWeight: FontWeight.bold),
                               ),
-                            ],
-                          ),
-                        ],
-                      ),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                     Padding(
                       padding:
