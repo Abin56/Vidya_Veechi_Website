@@ -8,6 +8,7 @@ import 'package:dujo_kerala_website/view/colors/colors.dart';
 import 'package:dujo_kerala_website/view/fonts/google_monstre.dart';
 import 'package:dujo_kerala_website/view/web/home/create_school/create_school.dart';
 import 'package:dujo_kerala_website/view/web/login/loginscreen.dart';
+import 'package:dujo_kerala_website/view/web/login/single%20login/single_login.dart';
 import 'package:dujo_kerala_website/view/web/widgets/drop_DownList/schoolDropDownList.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -1029,7 +1030,9 @@ class HomePageImages extends StatelessWidget {
                                             await Navigator.push(context,
                                                 MaterialPageRoute(
                                               builder: (context) {
-                                                return LoginScreen();
+                                                return 
+                                                //LoginScreen();
+                                                UserLoginPageScreen();
                                               },
                                             ));
                                           }
