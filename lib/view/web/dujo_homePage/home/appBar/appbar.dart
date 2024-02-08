@@ -12,7 +12,7 @@ const String _imageUrl =
     "https://firebasestorage.googleapis.com/v0/b/dujo-kerala-schools-1a6c5.appspot.com/o/dujocolleges.jpeg?alt=media&token=0c3fa202-c59f-47bd-b997-88f3128e6871";
 
 const String _description = "Any schools from Kerala can register on\n"
-    "COSTECH DuJo. COSTECH Dujo is a mobile application\n"
+    "Lepton VIDYAVEECHI. Lepton VIDYAVEECHI is a mobile application\n"
     "with student login,  parent login, teacher login";
 
 final Uri _faceBookUrl =
@@ -184,19 +184,20 @@ class ResponsiveMobileAppBar extends StatelessWidget {
                 children: [
                   SizedBox(
                     height: 75,
-                    width: 75,
+                    width: 100,
                     // color: Colors.white70,
                     child: Column(
                       children: [
                         GooglePoppinsWidgets(
-                          text: "COSTECH",
+                          text: "VIDYAVEECHI",
                           fontsize: 14,
                           color: cWhite,
                           fontWeight: FontWeight.w600,
                         ),
                         Image.asset(
-                          'assets/images/dujo_logo.png',
-
+                          'assets/images/vidyaveechi_logo.png',
+                            height: 50,
+                            width: 50,
                           fit: BoxFit.contain,
                           // color: adminePrimayColor,
                           color: Colors.white,
@@ -252,8 +253,8 @@ class ResponsiveMobileAppBar extends StatelessWidget {
 
                   Visibility(
                     visible: maxWidthValue < 430,
-                    child: Row(
-                      children: const [
+                    child: const Row(
+                      children: [
                         LoginButton(),
                         // Icon(
                         //   Icons.more_vert,
@@ -349,19 +350,19 @@ class AppBarPhoneNumber extends StatelessWidget {
       // height: 60,
       // width: MediaQuery.of(context).size.width,
       child: maxWidthValue < 430
-          ? Padding(
-              padding: const EdgeInsets.all(7),
+          ? const Padding(
+              padding: EdgeInsets.all(7),
               child: Column(
-                children: const [
+                children: [
                   MobNumber01(),
                   MobNumber02(),
                 ],
               ),
             )
-          : Padding(
-              padding: const EdgeInsets.all(7),
+          : const Padding(
+              padding: EdgeInsets.all(7),
               child: Row(
-                children: const [
+                children: [
                   MobNumber01(),
                   MobNumber02(),
                 ],

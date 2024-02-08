@@ -1,3 +1,4 @@
+import 'package:dujo_kerala_website/view/web/login/single%20login/single_login.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -134,9 +135,10 @@ class NavigationBarWidget extends StatelessWidget {
                           onPressed: () async {
                             await Navigator.push(context, MaterialPageRoute(
                               builder: (context) {
-                                return  LoginScreen(
+                                // return  LoginScreen(
                               
-                                );
+                                // );
+                              return  UserLoginPageScreen();
                               },
                             ));
                           },

@@ -36,7 +36,7 @@ class MobHomePage extends StatelessWidget {
  
  
     String description = "Any schools from Kerala can register on\n"
-    "COSTECH DuJo. COSTECH Dujo is a mobile \n"
+    "Lepton VIDYAVEECHI. Lepton VIDYAVEECHI is a mobile \n"
     "application with student login,parent, \n"
     "teacher login";
     return  Scaffold(
@@ -139,7 +139,7 @@ class MobHomePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              "Schools",style:
+                              "Tution Centers",style:
                             TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontStyle: FontStyle.italic,

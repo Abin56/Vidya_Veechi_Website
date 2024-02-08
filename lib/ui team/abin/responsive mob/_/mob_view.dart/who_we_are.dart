@@ -92,10 +92,10 @@ class WhoWeAre_02 extends StatelessWidget {
           child: GoogleMonstserratWidgets(
             fontsize: 18,
             text:
-                "Lepton  DuJo - the ultimate digitalized school infra app that streamlines infrastructure management and enhances school operations. With DuJo, schools can easily manage their facilities, assets, and resources with just a few clicks."
-                "DuJo provides a comprehensive range of features to manage schools' infrastructure, including live updates of attendance, a list of classes, a list of teachers, and notices and events as notifications. DuJo also offers online payment facilities, with a bill generation option for easy payment processing."
-                "DuJo also facilitates seamless learning through recorded and live classes. With student, parent, admin, teacher, and guardian logins, DuJo provides a customizable and secure platform for all stakeholders to manage and access information relevant to them."
-                "Join us on this exciting journey towards a more streamlined and efficient school infrastructure management system with DuJo. Experience the convenience and flexibility of a digitalized school infra app that takes your school's operations to the next level.",
+                "Lepton   -VIDYAVEECHI the ultimate digitalized tution infra app that streamlines infrastructure management and enhances tution center operations. With VidyaVeechi, schools can easily manage their facilities, assets, and resources with just a few clicks."
+                "VidyaVeechi provides a comprehensive range of features to manage schools' infrastructure, including live updates of attendance, a list of classes, a list of teachers, and notices and events as notifications. VidyaVeechi also offers online payment facilities, with a bill generation option for easy payment processing."
+                "VidyaVeechi also facilitates seamless learning through recorded and live classes. With student, parent, admin, teacher, and guardian logins, VidyaVeechi provides a customizable and secure platform for all stakeholders to manage and access information relevant to them."
+                "Join us on this exciting journey towards a more streamlined and efficient school infrastructure management system with VidyaVeechi. Experience the convenience and flexibility of a digitalized school infra app that takes your school's operations to the next level.",
             color: cWhite,
             letterSpacing: 3,
           )),

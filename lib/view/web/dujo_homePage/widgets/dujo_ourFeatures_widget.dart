@@ -70,7 +70,7 @@ class DujoWebFeatures extends StatelessWidget {
                   child: GooglePoppinsWidgets(
                     text: "Users Roles",
                     fontsize: 26,
-                    color: cred,
+                    color: Colors.lightBlue[900],
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -82,7 +82,7 @@ class DujoWebFeatures extends StatelessWidget {
                   children: [
                     WidgetContainerOnHome(
                         body:
-                            "School administrators have comprehensive control over the entire school community. They can monitor academic records, achievements, fee management, hostel management, library management, and school bus tracking. The app helps in efficient and economic management of the institution",
+                            "++ administrators have comprehensive control over the entire school community. They can monitor academic records, achievements, fee management, hostel management, library management, and school bus tracking. The app helps in efficient and economic management of the institution",
                         imagePath: 'assets/images/admin_png.png',
                         title: 'Admin Login'),
                     WidgetContainerOnHome(
@@ -121,7 +121,7 @@ class DujoWebFeatures extends StatelessWidget {
                 child: GooglePoppinsWidgets(
                   text: "Our Features",
                   fontsize: 26,
-                  color: cred,
+                 color: Colors.lightBlue[900],
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -313,7 +313,7 @@ This app provide digital versions of textbooks and e-books, which students can r
                       child: GooglePoppinsWidgets(
                         text: "Users Roles",
                         fontsize: 26,
-                        color: cred,
+                        color: Colors.lightBlue[900],
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -509,7 +509,7 @@ This app provide digital versions of textbooks and e-books, which students can r
                       child: GooglePoppinsWidgets(
                         text: "Users Roles",
                         fontsize: 26,
-                        color: cred,
+                       color: Colors.lightBlue[900],
                         fontWeight: FontWeight.bold,
                       ),
                     ),

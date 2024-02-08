@@ -3,15 +3,14 @@ import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_wi
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/footer.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/lepton_footerbar.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/widgets/copyright_widget.dart';
+import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/vidyaveechi_home.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/responsive/responsive.dart';
-import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/widget_container.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../colors/colors.dart';
 import '../../home/create_school/create_school.dart';
 import '../widgets/dujo_ourFeatures_widget.dart';
-import 'appBar/appbar.dart';
 import 'footer/widgets/alertDilogueBox.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -22,26 +21,26 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor:
           const Color.fromARGB(255, 249, 247, 235).withOpacity(0.4),
-      appBar: const PreferredSize(
-          preferredSize: Size(double.infinity, 100),
-          child: ResponsiveMobileAppBar()),
+      // appBar: const PreferredSize(
+      //     preferredSize: Size(double.infinity, 100),
+      //     child: ResponsiveMobileAppBar()),
       body: ResponsiveWebSite.isMobile(context)
           ? ListView(
               children: const [
-                DujoHOmeScreen(),
+                VidhyaVeechiHomePageResponsive(),
                 DujoWebFeatures(),
                 // MobileAppBAr(), // App Bar
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 FooterSectionScreen(),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],
@@ -49,23 +48,23 @@ class HomeScreen extends StatelessWidget {
           : ListView(
               children: const [
                 // const WebSiteNavBAr(), //Nav Bar
-                DujoHOmeScreen(),
+                VidhyaVeechiHomePageResponsive(),
                 DujoWebFeatures(),
                 // DujoHomeWebSiteDetails(),
-                Divider(
-                  height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 Padding(
                   padding: EdgeInsets.only(top: 15),
                   child: FooterSectionScreen(),
                 ),
-                Divider(
-                  // height: 05,
-                  thickness: 01,
-                  color: cBlack,
-                ),
+                // Divider(
+                //   // height: 05,
+                //   thickness: 01,
+                //   color: cBlack,
+                // ),
                 LeptonFooterBar(),
                 CopyRightWidget()
               ],
@@ -109,22 +108,23 @@ class DujoHOmeScreen extends StatelessWidget {
                                     : 15,
                                 color: adminePrimayColor,
                                 fontWeight: FontWeight.w500),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 10),
-                              child: SizedBox(
-                                  height: 85,
-                                  width: ResponsiveWebSite.isDesktop(context)
-                                      ? 270
-                                      : ResponsiveWebSite.isMobile(context)
-                                          ? 200
-                                          : 230,
-                                  // color: cred                ,
-                                  child: Center(
-                                      child: Image.asset(
-                                    "assets/images/COSTECH_bg.png",
-                                    fit: BoxFit.cover,
-                                  ))),
-                            ),
+                            // Padding(
+                            //   padding: const EdgeInsets.only(right: 10),
+                            //   child: SizedBox(
+                            //       height: 85,
+                            //       width: ResponsiveWebSite.isDesktop(context)
+                            //           ? 270
+                            //           : ResponsiveWebSite.isMobile(context)
+                            //               ? 200
+                            //               : 230,
+                            //       // color: cred                ,
+                            //       child: Center(
+                            //           child: Image.asset(
+                            //         "assets/images/COSTECH_bg.png",
+                            //         fit: BoxFit.cover,
+                            //       ))
+                            //       ),
+                            // ),
                             //sizedBoxH5,
                             Padding(
                               padding: const EdgeInsets.only(right: 10),
@@ -177,7 +177,7 @@ class DujoHOmeScreen extends StatelessWidget {
                                   color: adminePrimayColor,
                                   child: Center(
                                     child: Text(
-                                      'Create School Profile',
+                                      'Create Tution Center Profile',
                                       style: GoogleFonts.poppins(
                                           color: Colors.white,
                                           fontSize: 14,
@@ -202,30 +202,32 @@ class DujoHOmeScreen extends StatelessWidget {
                               Container(
                                 margin: const EdgeInsets.only(left: 10),
                                 // color: cBlue,
-                                width: 230,
-                                height: 50,
+                                width: 280,
+                                height: 100,
 
                                 child: Center(
-                                  child: GooglePoppinsWidgets(
-                                    text: "C O S T E C H",
-                                    fontsize: 30,
-                                    fontWeight: FontWeight.bold,
-                                  ),
+                                  child: Image.asset("assets/images/vvl1.png", width: 280,
+                                height: 100,),
+                                  // child: GooglePoppinsWidgets(
+                                  //   text: "V I D Y A V E E C H I",
+                                  //   fontsize: 30,
+                                  //   fontWeight: FontWeight.bold,
+                                  // ),
                                 ),
                               ),
-                              Container(
-                                margin: const EdgeInsets.only(
-                                  top: 10,
-                                ),
-                                // color: cBlue,
-                                width: 200,
-                                height: 50,
-                                decoration: const BoxDecoration(
-                                  image: DecorationImage(
-                                      image: AssetImage(
-                                          'assets/images/dujon.png')),
-                                ),
-                              ),
+                              // Container(
+                              //   margin: const EdgeInsets.only(
+                              //     top: 10,
+                              //   ),
+                              //   // color: cBlue,
+                              //   width: 200,
+                              //   height: 50,
+                              //   decoration: const BoxDecoration(
+                              //     image: DecorationImage(
+                              //         image: AssetImage(
+                              //             'assets/images/dujon.png')),
+                              //   ),
+                              // ),
                               Padding(
                                 padding:
                                     const EdgeInsets.only(top: 40, left: 20),
@@ -252,7 +254,7 @@ class DujoHOmeScreen extends StatelessWidget {
                                   color: adminePrimayColor,
                                   child: Center(
                                     child: Text(
-                                      'Create School Profile',
+                                      'Create Tution Center Profile',
                                       style: GoogleFonts.poppins(
                                           color: Colors.white,
                                           fontSize: 16,
@@ -274,20 +276,20 @@ class DujoHOmeScreen extends StatelessWidget {
                                   color: adminePrimayColor,
                                   fontWeight: FontWeight.w500),
                             ),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 10),
-                              child: SizedBox(
-                                  height: 85,
-                                  width: ResponsiveWebSite.isDesktop(context)
-                                      ? 270
-                                      : 230,
-                                  // color: cred                ,
-                                  child: Center(
-                                      child: Image.asset(
-                                    "assets/images/COSTECH_bg.png",
-                                    fit: BoxFit.cover,
-                                  ))),
-                            ),
+                            // Padding(
+                            //   padding: const EdgeInsets.only(right: 10),
+                            //   child: SizedBox(
+                            //       height: 85,
+                            //       width: ResponsiveWebSite.isDesktop(context)
+                            //           ? 270
+                            //           : 230,
+                            //       // color: cred                ,
+                            //       child: Center(
+                            //           child: Image.asset(
+                            //         "assets/images/COSTECH_bg.png",
+                            //         fit: BoxFit.cover,
+                            //       ))),
+                            // ),
                             //sizedBoxH5,
                             Padding(
                               padding: const EdgeInsets.only(right: 10),
@@ -396,9 +398,9 @@ class WebSiteDiscriptionWidget extends StatelessWidget {
               child: Center(
                 child: GooglePoppinsWidgets(
                   text:
-                      "The 'COSTECH DuJO The School App' is a collaborative effort between Lepton Communications and \n"
+                      "The 'Lepton VIDYAVEECHI The School App' is a collaborative effort between Lepton Communications and \n"
                       "\n"
-                      "COSTECH, designed to serve as a comprehensive mobile application for efficiently managing various \n"
+                      "Lepton VIDYAVEECHI, designed to serve as a comprehensive mobile application for efficiently managing various \n"
                       "\n"
                       "aspects of school infrastructure in the state of Kerala, India. The app offers a range of features and \n"
                       "\n"
@@ -507,7 +509,7 @@ class WebSiteDiscriptionWidget extends StatelessWidget {
               child: Center(
                 child: GooglePoppinsWidgets(
                     text:
-                        "'COSTECH DuJO The School App' aims to revolutionize the way schools in Kerala manage\n"
+                        "'Lepton VIDYAVEECHI The Tution App' aims to revolutionize the way schools in Kerala manage\n"
                         "\n"
                         "their infrastructure and interact with their stakeholders. By providing a centralized platform\n"
                         "\n"

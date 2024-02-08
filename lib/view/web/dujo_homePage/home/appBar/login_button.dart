@@ -2,6 +2,7 @@ import 'package:dujo_kerala_website/view/colors/colors.dart';
 import 'package:dujo_kerala_website/view/fonts/google_monstre.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/responsive/responsive.dart';
 import 'package:dujo_kerala_website/view/web/login/loginscreen.dart';
+import 'package:dujo_kerala_website/view/web/login/single%20login/single_login.dart';
 import 'package:dujo_kerala_website/view/web/widgets/drop_DownList/schoolDropDownList.dart';
 import 'package:flutter/material.dart';
 
@@ -71,7 +72,9 @@ class LoginButton extends StatelessWidget {
                                   await Navigator.push(context,
                                       MaterialPageRoute(
                                     builder: (context) {
-                                      return const LoginScreen();
+                                      return
+                                     //  const LoginScreen();
+                                       UserLoginPageScreen();
                                     },
                                   ));
                                 }

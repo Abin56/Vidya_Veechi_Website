@@ -365,11 +365,16 @@ class _NewAdminMainPanelState extends State<AdminDashBoardPage> {
                             GestureDetector(
                               //onTap: () => Get.to(HostelHomePage()),
                               child: Container(
-                                  margin: EdgeInsets.only(top: 20.h),
+                                  margin: EdgeInsets.only(top: 20.h,left: 30.sp),
                                   height: 30.h,
                                   width: 80.w,
-                                  child:
-                                      Image.asset('assets/images/dujon.png')),
+                                  child:Row(
+                                    children: [Image.asset("assets/images/vidyaveechi_logo.png"),
+                                      GooglePoppinsWidgets(text: "VIDYAVEECHI", fontsize: 16,fontWeight: FontWeight.bold,color: cWhite,),
+                                    ],
+                                  )
+                                     // Image.asset('assets/images/dujon.png')
+                                      ),
                             ),
                             Row(
                               children: [
@@ -753,9 +758,9 @@ class _NewAdminMainPanelState extends State<AdminDashBoardPage> {
                                       builder: (BuildContext context) {
                                         return AlertDialog(
                                           title: const Text('Message'),
-                                          content: SingleChildScrollView(
+                                          content: const SingleChildScrollView(
                                             child: ListBody(
-                                              children: const <Widget>[
+                                              children: <Widget>[
                                                 Text(
                                                     'Are you sure you want to logout?')
                                               ],

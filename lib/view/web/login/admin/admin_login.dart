@@ -1,6 +1,5 @@
 import 'package:dujo_kerala_website/controller/admin_login_screen/admin_login_screen_controller.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
@@ -35,8 +34,8 @@ class AdminLoginScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           iconTheme: const IconThemeData(color: cWhite),
-          backgroundColor: const Color.fromARGB(255, 74, 3, 107)),
-      backgroundColor: const Color.fromARGB(255, 74, 3, 107),
+          backgroundColor:  const Color.fromARGB(255, 60, 141, 233),),
+      backgroundColor:  const Color.fromARGB(255, 60, 141, 233),
       body: SizedBox(
         height: height,
         width: width,
@@ -49,7 +48,7 @@ class AdminLoginScreen extends StatelessWidget {
                 : Expanded(
                     child: Container(                                             
                       height: height,
-                      color: const Color.fromARGB(255, 74, 3, 107),
+                      color:  const Color.fromARGB(255, 60, 141, 233),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -79,7 +78,7 @@ class AdminLoginScreen extends StatelessWidget {
                     horizontal: ResponsiveWidget.isSmallScreen(context)
                         ? height * 0.032
                         : height * 0.15),
-                color: const Color.fromARGB(255, 74, 3, 107),
+                color: const Color.fromARGB(255, 60, 141, 233),
                 child: SingleChildScrollView(
                   padding: const EdgeInsets.only(bottom: 40.0),
                   child: Column(
