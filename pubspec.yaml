@@ -86,6 +86,18 @@ dependencies:
   video_player_web_hls: 
   visibility_detector:
   # wakelock: ^0.6.2 
+  # percent_indicator: null
+  # popover: null
+  # provider: null
+  # scroll_to_index: null
+  # side_sheet: null
+  # sidebar_drawer: null
+  # syncfusion_flutter_calendar: null
+  # syncfusion_flutter_charts: null
+  # syncfusion_flutter_datagrid: null
+  # syncfusion_flutter_gauges: null
+  # table_calendar: null
+  # uuid: null
 
 dev_dependencies:
   flutter_lints: ^2.0.0
