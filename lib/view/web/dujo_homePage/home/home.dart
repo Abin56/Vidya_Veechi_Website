@@ -3,6 +3,7 @@ import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_wi
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/footer.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/lepton_footerbar.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/footer/widgets/copyright_widget.dart';
+import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/vidyaveechi_home.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/responsive/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -10,7 +11,6 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../../colors/colors.dart';
 import '../../home/create_school/create_school.dart';
 import '../widgets/dujo_ourFeatures_widget.dart';
-import 'appBar/appbar.dart';
 import 'footer/widgets/alertDilogueBox.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -21,13 +21,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor:
           const Color.fromARGB(255, 249, 247, 235).withOpacity(0.4),
-      appBar: const PreferredSize(
-          preferredSize: Size(double.infinity, 100),
-          child: ResponsiveMobileAppBar()),
+      // appBar: const PreferredSize(
+      //     preferredSize: Size(double.infinity, 100),
+      //     child: ResponsiveMobileAppBar()),
       body: ResponsiveWebSite.isMobile(context)
           ? ListView(
               children: const [
-                DujoHOmeScreen(),
+                VidhyaVeechiHomePageResponsive(),
                 DujoWebFeatures(),
                 // MobileAppBAr(), // App Bar
                 // Divider(
@@ -48,7 +48,7 @@ class HomeScreen extends StatelessWidget {
           : ListView(
               children: const [
                 // const WebSiteNavBAr(), //Nav Bar
-                DujoHOmeScreen(),
+                VidhyaVeechiHomePageResponsive(),
                 DujoWebFeatures(),
                 // DujoHomeWebSiteDetails(),
                 // Divider(

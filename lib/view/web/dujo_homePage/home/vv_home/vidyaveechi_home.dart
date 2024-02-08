@@ -13,8 +13,8 @@ class VidhyaVeechiHomePageResponsive extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
-    return Scaffold(
-      body: SingleChildScrollView(
+    return 
+       SingleChildScrollView(
         child: ResponsiveWebSite.isMobile(context)
             ? Column(
                 children: [
@@ -347,16 +347,16 @@ class VidhyaVeechiHomePageResponsive extends StatelessWidget {
                         ],
                       ),
                       // GridViewNew(screenSize: screenSize),
-                      Container(
-                        height: screenSize.width / 5,
-                        width: screenSize.width,
-                        color: Colors.lightBlueAccent,
-                      ),
+                      // Container(
+                      //   height: screenSize.width / 5,
+                      //   width: screenSize.width,
+                      //   color: Colors.lightBlueAccent,
+                      // ),
                     ],
                   )
                 ],
               ),
-      ),
+    
     );
   }
 }
