@@ -1,9 +1,13 @@
 
+import 'package:dujo_kerala_website/controller/admin_login_screen/admin_login_screen_controller.dart';
 import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_widget.dart';
 import 'package:dujo_kerala_website/view/web/widgets/glassmorphism.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 functionc(BuildContext context) {
+    AdminLoginScreenController adminLoginScreenController =
+      Get.put(AdminLoginScreenController());
   return showGeneralDialog(
     context: context,
     pageBuilder: (ctx, a1, a2) {
@@ -59,7 +63,11 @@ functionc(BuildContext context) {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           GestureDetector(
-                            onTap: (){},
+                           onTap: () async {
+                            await adminLoginScreenController.loginFunction(
+                              context,
+                            );
+                          },
                             //  => Navigator.push(context,
                             //     MaterialPageRoute(builder: (context) {
                             //   return const AdminHomeScreen();
