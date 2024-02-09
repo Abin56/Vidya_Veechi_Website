@@ -17,13 +17,13 @@ class ClassTeacherLoginController extends GetxController {
       .collection('SchoolListCollection')
       .doc(Get.find<AdminLoginScreenController>().schoolID)
       .collection("Teachers");
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+
   RxBool isLoading = RxBool(false);
 
   //class Teacher Login
 
-  Future<void> classTeacherLogin(BuildContext context) async {
+  Future<void> classTeacherLogin(TextEditingController emailController,
+      TextEditingController passwordController, BuildContext context) async {
     try {
       isLoading.value = true;
       firebaseAuth

@@ -1,5 +1,6 @@
-
+import 'package:dujo_kerala_website/controller/Login_controller/login_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../colors/colors.dart';
 import '../../fonts/fonts.dart';
@@ -8,8 +9,8 @@ import '../widgets/responsive.dart';
 import 'admin/admin_login.dart';
 import 'class_teacher/class_teacher_screen_login.dart';
 
-class LoginScreen extends StatefulWidget { 
-  const LoginScreen({ Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -22,7 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
-       appBar: AppBar(backgroundColor: Colors.transparent,elevation: 0,iconTheme: const IconThemeData(color: Colors.black),),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        iconTheme: const IconThemeData(color: Colors.black),
+      ),
       backgroundColor: AppColors.backColor,
       body: SizedBox(
         height: height,
@@ -40,10 +45,11 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Column(
                           children: [
                             Padding(
-                              padding:  EdgeInsets.only(top: screenSize.width*1/7),
+                              padding: EdgeInsets.only(
+                                  top: screenSize.width * 1 / 7),
                               child: Container(
-                               // height: height,
-                               height: screenSize.width*1/5,
+                                // height: height,
+                                height: screenSize.width * 1 / 5,
                                 decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
@@ -83,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
                           return ClassTeacherLoginScreen(
-                            schoolID:'',
+                            schoolID: '',
                           );
                         },
                       ));
@@ -96,18 +102,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               style: GoogleFont.subHeadTextStyle),
                         ),
                         colorindex: 1,
-                        height: screenSize.width/8,
+                        height: screenSize.width / 8,
                         width: 400),
                   ),
                   GestureDetector(
                     onTap: () {
-                          Navigator.push(context, MaterialPageRoute(
-                            builder: (context) {
-                      
-                              return AdminLoginScreen(
-
-                              
-                              );
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (context) {
+                          return AdminLoginScreen();
                         },
                       ));
                     },
@@ -119,7 +121,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               style: GoogleFont.subHeadTextStyle),
                         ),
                         colorindex: 7,
-                        height: screenSize.width/8,
+                        height: screenSize.width / 8,
                         width: 400),
                   )
                 ],

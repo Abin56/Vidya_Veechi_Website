@@ -21,10 +21,11 @@ class AdminLoginScreenController extends GetxController {
   String schoolName = schoolListValue?['schoolName'];
   // String batchYearID = schoolBatchYearListValue?['id'] ?? '';
 
-  TextEditingController schoolIdController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
 
   Future<void> loginFunction(
+    TextEditingController schoolIdController,
+    TextEditingController passwordController,
+
     BuildContext context,
   ) async {
     try {

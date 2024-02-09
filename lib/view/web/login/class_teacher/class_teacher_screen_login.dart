@@ -133,8 +133,8 @@ class ClassTeacherLoginScreen extends StatelessWidget {
                           color: AppColors.whiteColor,
                         ),
                         child: TextFormField(
-                          controller:
-                              classTeacherLoginController.emailController,
+                          // controller:
+                          //     classTeacherLoginController.emailController,
                           style: ralewayStyle.copyWith(
                             fontWeight: FontWeight.w400,
                             color: cBlack,
@@ -175,8 +175,8 @@ class ClassTeacherLoginScreen extends StatelessWidget {
                         ),
                         child: Obx(
                           () => TextFormField(
-                            controller:
-                                classTeacherLoginController.passwordController,
+                            // controller:
+                            //     classTeacherLoginController.passwordController,
                             obscureText:
                                 _hideGetxController.isObscureSecond.value,
 
@@ -231,8 +231,8 @@ class ClassTeacherLoginScreen extends StatelessWidget {
                         color: Colors.transparent,
                         child: InkWell(
                           onTap: () async {
-                            await classTeacherLoginController
-                                .classTeacherLogin(context);
+                            // await classTeacherLoginController
+                            //     .classTeacherLogin(context);
                           },
                           borderRadius: BorderRadius.circular(16.0),
                           child: Ink(

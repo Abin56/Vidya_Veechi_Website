@@ -53,13 +53,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBPaQ4Ga-d_wTd9pCiU_kMTllMeuVblSP0',
-    appId: '1:512252187081:web:29a9843fc66f17bc6f5818',
-    messagingSenderId: '512252187081',
-    projectId: 'leptondujokerala',
-    authDomain: 'leptondujokerala.firebaseapp.com',
-    databaseURL: 'https://leptondujokerala-default-rtdb.asia-southeast1.firebasedatabase.app',
-    storageBucket: 'leptondujokerala.appspot.com',
-    measurementId: 'G-QC6SR6TLE0',
+    apiKey: 'AIzaSyC4LhxvtLT4WITZgvA9AFma1GmWYeSN7Rk',
+    appId: '1:341868646352:web:50582c371ebf12789a33d5',
+    messagingSenderId: '341868646352',
+    projectId: 'vidya-veechi-8-feb-2024',
+    authDomain: 'vidya-veechi-8-feb-2024.firebaseapp.com',
+    storageBucket: 'vidya-veechi-8-feb-2024.appspot.com',
+    measurementId: 'G-8L84N6SGWW',
   );
 }

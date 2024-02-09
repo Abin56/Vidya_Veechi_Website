@@ -33,7 +33,6 @@ dependencies:
   carousel_slider: 
   chewie: 
   cloud_firestore: 
-  cloud_firestore_web: 
   country_state_city_picker: 
   cupertino_icons: 
   dio: 
@@ -42,7 +41,7 @@ dependencies:
   dropdown_search:
   excel:
   file_picker:
-  firebase_auth: 
+  firebase_auth: ^4.10.1
   firebase_core: 
   firebase_core_platform_interface: 
   firebase_database: 
@@ -92,6 +91,8 @@ dependencies:
   syncfusion_flutter_gauges:  
   percent_indicator:
   data_table_2: 
+  fab_circular_menu_plus:
+  font_awesome_flutter:
   # wakelock: ^0.6.2 
   # percent_indicator: null
   # popover: null
@@ -125,6 +126,7 @@ flutter:
   assets:
     - assets/images/
     - assets/png/
+    - assets/flact_png/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
