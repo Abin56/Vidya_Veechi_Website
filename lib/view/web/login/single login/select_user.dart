@@ -1,5 +1,6 @@
 
 import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_widget.dart';
+import 'package:dujo_kerala_website/view/web/login/admin/admin_DashBoard/admin_dashborad_screen.dart';
 import 'package:dujo_kerala_website/view/web/widgets/glassmorphism.dart';
 import 'package:flutter/material.dart';
 
@@ -59,10 +60,12 @@ functionc(BuildContext context) {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           GestureDetector(
-                            onTap: (){},
+                            onTap: (){
+                             AdminDashBoardPage(schoolID:'' ,);
+                            },
                             //  => Navigator.push(context,
                             //     MaterialPageRoute(builder: (context) {
-                            //   return const AdminHomeScreen();
+                             //   AdminLoginScreen();
                             // })
                             
                             child: GlassMorphism(
@@ -95,7 +98,9 @@ functionc(BuildContext context) {
                             ),
                           ),
                           GestureDetector(
-                            onTap: (){},
+                            onTap: (){
+                              AdminDashBoardPage(schoolID:'' ,);
+                            },
                             //  => Navigator.push(context,
                             //     MaterialPageRoute(builder: (context) {
                             //   return const TeachersHomeScreen();

@@ -1,3 +1,4 @@
+import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/screens/register/register.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/widgets/responsive/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -88,7 +89,9 @@ class HomePageContents extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 75, 131, 252),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Registration()));
+                  },
                   child: Text(
                     'REGISTER',
                     style: GoogleFonts.poppins(
