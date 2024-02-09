@@ -90,7 +90,7 @@ class HomePageContents extends StatelessWidget {
                     backgroundColor: const Color.fromARGB(255, 75, 131, 252),
                   ),
                   onPressed: () {
-                     Navigator.of(context).push(MaterialPageRoute(builder: (context) => const Registration()));
+                     Navigator.of(context).push(MaterialPageRoute(builder: (context) =>  Registration()));
                   },
                   child: Text(
                     'REGISTER',
