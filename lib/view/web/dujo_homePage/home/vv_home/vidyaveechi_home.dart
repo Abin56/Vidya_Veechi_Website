@@ -1,4 +1,5 @@
 import 'package:dropdown_search/dropdown_search.dart';
+import 'package:dujo_kerala_website/view/colors/colors.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/screens/home_page_contents%20.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/screens/lepton_logo_appbar.dart';
 import 'package:dujo_kerala_website/view/web/dujo_homePage/home/vv_home/screens/tree_part.dart';
@@ -147,21 +148,32 @@ class VidhyaVeechiHomePageResponsive extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 20, left: 300),
-                          child: SizedBox(
-                            height: 30,
-                            width: 100,
-                            child: InkWell(
-                              child: Text(
-                                'LOGIN',
-                                style: GoogleFonts.poppins(
-                                    fontSize: 13,
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white),
-                              ),
-                            ),
-                          ),
-                        ),
+          padding: const EdgeInsets.all(8.0),
+          child: Row(mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              GestureDetector(
+                 onTap: () {
+                 
+                 },
+                child: Container(
+                  decoration: const BoxDecoration( color: cWhite,borderRadius: BorderRadius.all(Radius.circular(10))),
+                 
+                  height:  30 ,
+                  width: 100 ,
+                  child: Center(
+                    child: Text(
+                      'LOGIN',
+                      style: GoogleFonts.poppins(
+                          fontSize:  13 ,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.purple),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
                         Padding(
                           padding: const EdgeInsets.only(
                             left: 20,
@@ -312,7 +324,7 @@ class VidhyaVeechiHomePageResponsive extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  height: 600,
+                                  height: 650,
                                   width: screenSize.width,
                                   decoration: const BoxDecoration(
                                     gradient: LinearGradient(

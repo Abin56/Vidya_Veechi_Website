@@ -1,10 +1,16 @@
 
+import 'package:dujo_kerala_website/controller/admin_login_screen/admin_login_screen_controller.dart';
+import 'package:dujo_kerala_website/controller/class_teacher_login_screen/class_teacher_login_controller.dart';
 import 'package:dujo_kerala_website/view/google_poppins_widget/google_poppins_widget.dart';
-import 'package:dujo_kerala_website/view/web/login/admin/admin_DashBoard/admin_dashborad_screen.dart';
 import 'package:dujo_kerala_website/view/web/widgets/glassmorphism.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 functionc(BuildContext context) {
+    AdminLoginScreenController adminLoginScreenController =
+      Get.put(AdminLoginScreenController());
+      ClassTeacherLoginController classTeacherLoginController =
+      Get.put(ClassTeacherLoginController());
   return showGeneralDialog(
     context: context,
     pageBuilder: (ctx, a1, a2) {
@@ -60,12 +66,14 @@ functionc(BuildContext context) {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           GestureDetector(
-                            onTap: (){
-                             AdminDashBoardPage(schoolID:'' ,);
-                            },
+                           onTap: () async {
+                            await adminLoginScreenController.loginFunction(
+                              context,
+                            );
+                          },
                             //  => Navigator.push(context,
                             //     MaterialPageRoute(builder: (context) {
-                             //   AdminLoginScreen();
+                            //   return const AdminHomeScreen();
                             // })
                             
                             child: GlassMorphism(
@@ -98,9 +106,10 @@ functionc(BuildContext context) {
                             ),
                           ),
                           GestureDetector(
-                            onTap: (){
-                              AdminDashBoardPage(schoolID:'' ,);
-                            },
+                              onTap: () async {
+                            await classTeacherLoginController
+                                .classTeacherLogin(context);
+                          },
                             //  => Navigator.push(context,
                             //     MaterialPageRoute(builder: (context) {
                             //   return const TeachersHomeScreen();

@@ -101,13 +101,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(
-                        builder: (context) {
-                  
-                          return AdminLoginScreen(
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                      
+                              return AdminLoginScreen(
 
-                           
-                          );
+                              
+                              );
                         },
                       ));
                     },
