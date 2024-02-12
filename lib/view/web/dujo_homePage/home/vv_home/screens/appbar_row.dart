@@ -7,16 +7,14 @@ class ContentsHomePage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Text(
-        "About",
-        style: GoogleFonts.roboto(
-            fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
-            fontWeight: ResponsiveWebSite.isDesktop(context)
-                ? FontWeight.w500
-                : FontWeight.w400,
-            color: Colors.black),
-      ),
+    return Text(
+      "About",
+      style: GoogleFonts.roboto(
+          fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
+          fontWeight: ResponsiveWebSite.isDesktop(context)
+              ? FontWeight.w500
+              : FontWeight.w400,
+          color: Colors.black),
     );
   }
 }
@@ -45,16 +43,14 @@ class ContentsHomePage3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Text(
-        "Syllabus",
-        style: GoogleFonts.roboto(
-            fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
-            fontWeight: ResponsiveWebSite.isDesktop(context)
-                ? FontWeight.w500
-                : FontWeight.w400,
-            color: Colors.black),
-      ),
+    return Text(
+      "Syllabus",
+      style: GoogleFonts.roboto(
+          fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
+          fontWeight: ResponsiveWebSite.isDesktop(context)
+              ? FontWeight.w500
+              : FontWeight.w400,
+          color: Colors.black),
     );
   }
 }
@@ -64,16 +60,14 @@ class ContentsHomePage4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Text(
-        "Mock Test",
-        style: GoogleFonts.roboto(
-            fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
-            fontWeight: ResponsiveWebSite.isDesktop(context)
-                ? FontWeight.w500
-                : FontWeight.w400,
-            color: Colors.black),
-      ),
+    return Text(
+      "Mock Test",
+      style: GoogleFonts.roboto(
+          fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
+          fontWeight: ResponsiveWebSite.isDesktop(context)
+              ? FontWeight.w500
+              : FontWeight.w400,
+          color: Colors.black),
     );
   }
 }
@@ -83,16 +77,14 @@ class ContentsHomePage5 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Text(
-        "Previous Qn",
-        style: GoogleFonts.roboto(
-            fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
-            fontWeight: ResponsiveWebSite.isDesktop(context)
-                ? FontWeight.w500
-                : FontWeight.w400,
-            color: Colors.black),
-      ),
+    return Text(
+      "Previous Qn",
+      style: GoogleFonts.roboto(
+          fontSize: ResponsiveWebSite.isDesktop(context) ? 18 : 14,
+          fontWeight: ResponsiveWebSite.isDesktop(context)
+              ? FontWeight.w500
+              : FontWeight.w400,
+          color: Colors.black),
     );
   }
 }
